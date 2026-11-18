@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello ejs</h1>
+    <h2>my name is <%=name%> and am <%=age%></h2>
+    <% if (age <20) {%>
+        <p>You are young</p>
+        <% }else{ %>
+            <p>you are an adult</p>
+            <% } %>
+
+
+            <!-- <% for(i=0; i<=100; i++) {%>
+                <p><%= i %></p>
+            <% } %> -->
+            
+            
+            <% users.map((user)=>{ %>
+                <span><%= user.name %></span>
+               <span><%= user.age %></span>
+                <br>
+                <% }) %>
+
+
+</body>
+</html>
